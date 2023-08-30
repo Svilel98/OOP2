@@ -1,13 +1,11 @@
-public class Bicycle implements InterfaceUpdateTyre {
-    protected String modelName;
-    protected int wheelsCount;
-
+public class Bicycle extends Transport implements InterfaceUpdateTyre {
     public Bicycle(String modelName, int wheelsCount) {
-        this.modelName = modelName;
-        this.wheelsCount = wheelsCount;
+        super(modelName, wheelsCount);
     }
+
     @Override
-    public void updateTyre() {
-            System.out.println("Меняем покрышку");
+    public void check() {
+        super.check();
+        updateTyre();
     }
 }

@@ -11,7 +11,6 @@ public class Car extends Transport implements InterfaceUpdateTyre, InterfaceChec
     @Override
     public void check() {
         super.check();
-        updateTyre();
         checkEngine();
     }
 }

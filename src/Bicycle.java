@@ -6,6 +6,5 @@ public class Bicycle extends Transport implements InterfaceUpdateTyre {
     @Override
     public void check() {
         super.check();
-        updateTyre();
     }
 }

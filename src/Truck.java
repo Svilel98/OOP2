@@ -15,7 +15,6 @@ public class Truck extends Transport implements InterfaceUpdateTyre, InterfaceCh
     @Override
     public void check() {
         super.check();
-        updateTyre();
         checkEngine();
         checkTrailer();
     }
